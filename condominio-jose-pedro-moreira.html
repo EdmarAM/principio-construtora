@@ -1,0 +1,1125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Condomínio José Pedro Moreira — detalhes, estrutura, diferenciais e referências de preço.">
+  <meta name="theme-color" content="#011434">
+  <title>Condomínio José Pedro Moreira — Princípio Construtora</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand:#011434;
+      --brand-2:#071d3f;
+      --gold:#c9a96e;
+      --gold-dark:#a98549;
+      --paper:#f5f1e8;
+      --soft:#ece5d8;
+      --ink:#242629;
+      --muted:#6f685f;
+      --line:#d9d0c1;
+      --max:1450px;
+      --serif:"Cormorant Garamond", Georgia, serif;
+      --sans:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      --condensed:"Arial Narrow","HelveticaNeue-CondensedBold","Roboto Condensed",Impact,sans-serif;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55}
+    body.ref-menu-open{overflow:hidden}
+    a{color:inherit;text-decoration:none}
+    img{display:block;width:100%;height:100%;object-fit:cover}
+    figure{margin:0}
+    .container{width:min(calc(100% - 64px),var(--max));margin:auto}
+
+    /* =========================================================
+       NAVBAR — MESMO PADRÃO DO INDEX REAL
+       ========================================================= */
+    .ref-header {
+      position: absolute;
+      inset: 0 0 auto;
+      z-index: 100;
+      background: transparent;
+      color: #fff;
+    }
+
+    .ref-header-inner {
+      width: min(calc(100% - 64px), 1456px);
+      min-height: 74px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 34px;
+    }
+
+    .ref-brand {
+      display: flex;
+      align-items: center;
+      flex: 0 0 auto;
+      padding: 0;
+      background: transparent;
+    }
+
+    .ref-brand-monogram {
+      position: relative;
+      width: 38px;
+      height: 38px;
+      flex: 0 0 38px;
+      display: grid;
+      place-items: center;
+      color: #d8b45f;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 29px;
+      font-weight: 400;
+      line-height: 1;
+      isolation: isolate;
+    }
+
+    .ref-brand-monogram::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      right: -5px;
+      top: 50%;
+      height: 1px;
+      background: #d8b45f;
+      transform: translateY(-50%);
+      opacity: .9;
+    }
+
+    .ref-brand-monogram::after {
+      content: "";
+      position: absolute;
+      top: -4px;
+      bottom: -4px;
+      right: 0;
+      width: 1px;
+      background: #d8b45f;
+      opacity: .8;
+    }
+
+    .ref-brand-monogram>span {
+      position: relative;
+      z-index: 1;
+      background: rgba(7, 8, 7, .72);
+      padding: 0 5px 1px;
+    }
+
+    .ref-brand-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 10px;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1;
+      font-weight: 700;
+      letter-spacing: .15em;
+      white-space: nowrap;
+    }
+
+    .ref-brand-copy small {
+      display: block;
+      margin-top: 7px;
+      color: rgba(255, 255, 255, .62);
+      font-size: 6px;
+      line-height: 1;
+      font-weight: 700;
+      letter-spacing: .25em;
+    }
+
+    .ref-nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 34px;
+      margin-left: auto;
+      font-family: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1;
+      color: rgba(255, 255, 255, .84);
+    }
+
+    .ref-nav a {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 0;
+      color: inherit;
+      white-space: nowrap;
+      transition: color .2s ease, opacity .2s ease, border-color .2s ease, background .2s ease;
+    }
+
+    .ref-nav a:not(.ref-nav-cta)::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: 5px;
+      height: 1px;
+      background: #c9a96e;
+      transition: right .22s ease;
+    }
+
+    .ref-nav a:not(.ref-nav-cta):hover {
+      color: #fff;
+    }
+
+    .ref-nav a:not(.ref-nav-cta):hover::after {
+      right: 0;
+    }
+
+    .ref-nav-cta {
+      min-height: 42px !important;
+      padding: 0 18px !important;
+      border: 1px solid rgba(201, 169, 110, .72);
+      color: #d9b96f !important;
+      font-size: 11px;
+    }
+
+    .ref-nav-cta:hover {
+      background: #c9a96e;
+      border-color: #c9a96e;
+      color: #171717 !important;
+    }
+
+    .ref-menu-btn {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(201, 169, 110, .55);
+      background: rgba(0, 0, 0, .12);
+      color: #fff;
+      font-size: 23px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    /* =========================================================
+       HERO
+       ========================================================= */
+    .condo-hero{
+      position:relative;
+      min-height:720px;
+      height:min(90vh,880px);
+      overflow:hidden;
+      background:var(--brand);
+      color:#fff;
+    }
+
+    .condo-hero-media{
+      position:absolute;
+      inset:0;
+    }
+
+    .condo-hero-media img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center 50%;
+      filter:none;
+      transform:none;
+    }
+
+    .condo-hero-shade{
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(90deg, rgba(1,20,52,.95) 0%, rgba(1,20,52,.80) 34%, rgba(1,20,52,.37) 61%, rgba(1,20,52,.12) 82%),
+        linear-gradient(0deg, rgba(1,20,52,.52) 0%, transparent 50%);
+    }
+
+    .condo-hero-content{
+      position:relative;
+      z-index:3;
+      width:min(calc(100% - 64px),1456px);
+      height:100%;
+      min-height:720px;
+      margin:auto;
+      padding:142px 0 104px;
+      display:flex;
+      align-items:center;
+    }
+
+    .condo-hero-copy{
+      width:min(650px,52vw);
+    }
+
+    .condo-kicker{
+      margin-bottom:18px;
+      color:#c9a96e;
+      font-size:9px;
+      font-weight:900;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+    }
+
+    .condo-hero h1{
+      margin:0;
+      font:500 clamp(70px,7.3vw,110px)/.86 var(--serif);
+      letter-spacing:-.055em;
+      color:#fff;
+    }
+
+    .condo-lead{
+      max-width:610px;
+      margin:22px 0 0;
+      color:rgba(255,255,255,.78);
+      font-size:14px;
+      line-height:1.8;
+    }
+
+    .hero-actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:28px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:48px;
+      padding:0 22px;
+      border:1px solid currentColor;
+      font-size:10px;
+      font-weight:900;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+      transition:.22s ease;
+    }
+
+    .btn-gold{
+      background:var(--gold);
+      border-color:var(--gold);
+      color:var(--brand);
+    }
+
+    .btn-gold:hover{
+      background:#dfc180;
+      border-color:#dfc180;
+    }
+
+    .btn-ghost{
+      background:transparent;
+      border-color:rgba(255,255,255,.48);
+      color:#fff;
+    }
+
+    .btn-ghost:hover{
+      background:#fff;
+      color:var(--brand);
+    }
+
+    .hero-specs{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      margin-top:38px;
+      max-width:650px;
+      border-top:1px solid rgba(255,255,255,.18);
+      border-bottom:1px solid rgba(255,255,255,.18);
+    }
+
+    .hero-spec{
+      padding:16px 13px;
+      border-right:1px solid rgba(255,255,255,.14);
+    }
+
+    .hero-spec:last-child{border-right:0}
+
+    .hero-spec strong{
+      display:block;
+      font:900 25px/1 var(--condensed);
+      color:var(--gold);
+    }
+
+    .hero-spec span{
+      display:block;
+      margin-top:7px;
+      color:rgba(255,255,255,.60);
+      font-size:8px;
+      font-weight:900;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+
+    .hero-seal{
+      position:absolute;
+      z-index:4;
+      right:max(42px,calc((100vw - 1456px)/2 + 20px));
+      bottom:34px;
+      width:176px;
+      height:176px;
+      padding:12px;
+      overflow:hidden;
+      border-radius:50%;
+      border:1px solid rgba(201,169,110,.82);
+      background:var(--brand);
+      box-shadow:0 20px 50px rgba(0,0,0,.28);
+    }
+
+    .hero-seal::before{
+      content:"";
+      position:absolute;
+      inset:8px;
+      border:1px solid rgba(201,169,110,.28);
+      border-radius:50%;
+      pointer-events:none;
+    }
+
+    .hero-seal img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:50%;
+    }
+
+    .hero-index{
+      position:absolute;
+      z-index:4;
+      left:max(32px,calc((100vw - 1456px)/2));
+      right:max(240px,calc((100vw - 1456px)/2 + 220px));
+      bottom:25px;
+      display:flex;
+      justify-content:space-between;
+      gap:24px;
+      color:rgba(255,255,255,.64);
+      font-size:8px;
+      font-weight:900;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+
+    .hero-index span:first-child{color:var(--gold)}
+
+    /* =========================================================
+       CONTEÚDO
+       ========================================================= */
+    .section{
+      padding:88px 0;
+    }
+
+    .section-head{
+      display:grid;
+      grid-template-columns:minmax(0,.9fr) minmax(340px,.55fr);
+      gap:70px;
+      align-items:end;
+      margin-bottom:46px;
+    }
+
+    .section-eyebrow{
+      color:var(--gold-dark);
+      font-size:9px;
+      font-weight:900;
+      letter-spacing:.2em;
+      text-transform:uppercase;
+    }
+
+    .section-head h2{
+      margin:9px 0 0;
+      max-width:760px;
+      font:500 clamp(48px,5.2vw,76px)/.92 var(--serif);
+      letter-spacing:-.04em;
+      color:var(--brand);
+    }
+
+    .section-head p{
+      margin:0;
+      padding-left:26px;
+      border-left:1px solid var(--gold);
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.8;
+    }
+
+    .benefit-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:0;
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+
+    .benefit{
+      min-height:210px;
+      padding:28px 28px 25px;
+      border-right:1px solid var(--line);
+    }
+
+    .benefit:last-child{border-right:0}
+
+    .benefit-icon{
+      width:42px;
+      height:42px;
+      margin-bottom:22px;
+      color:var(--brand);
+    }
+
+    .benefit-icon svg{
+      width:100%;
+      height:100%;
+      fill:none;
+      stroke:currentColor;
+      stroke-width:1.6;
+    }
+
+    .benefit h3{
+      margin:0 0 8px;
+      font:600 24px var(--serif);
+      color:var(--brand);
+    }
+
+    .benefit p{
+      margin:0;
+      color:var(--muted);
+      font-size:11px;
+      line-height:1.65;
+    }
+
+    .owner-banner{
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:26px;
+      align-items:center;
+      margin-top:38px;
+      padding:28px 32px;
+      background:var(--brand);
+      color:#fff;
+      border-top:1px solid rgba(201,169,110,.45);
+    }
+
+    .owner-banner strong{
+      display:block;
+      margin-bottom:4px;
+      font:600 28px/1 var(--serif);
+    }
+
+    .owner-banner p{
+      margin:0;
+      color:rgba(255,255,255,.66);
+      font-size:11px;
+    }
+
+    .features{
+      background:var(--brand);
+      color:#fff;
+    }
+
+    .features .section-eyebrow{
+      color:var(--gold);
+    }
+
+    .features .section-head h2{
+      color:#fff;
+    }
+
+    .features .section-head p{
+      color:rgba(255,255,255,.61);
+      border-left-color:rgba(201,169,110,.62);
+    }
+
+    .feature-columns{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:0;
+      border-top:1px solid rgba(255,255,255,.12);
+      border-bottom:1px solid rgba(255,255,255,.12);
+    }
+
+    .feature-column{
+      padding:28px 26px;
+      border-right:1px solid rgba(255,255,255,.10);
+    }
+
+    .feature-column:last-child{border-right:0}
+
+    .feature-column h3{
+      margin:0 0 15px;
+      font:600 22px var(--serif);
+      color:#fff;
+    }
+
+    .feature-list{
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+
+    .feature-list li{
+      position:relative;
+      padding:8px 0 8px 18px;
+      color:rgba(255,255,255,.72);
+      font-size:11px;
+      border-top:1px solid rgba(255,255,255,.06);
+    }
+
+    .feature-list li::before{
+      content:"✓";
+      position:absolute;
+      left:0;
+      color:var(--gold);
+      font-weight:900;
+    }
+
+    .property-metrics{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:10px;
+      margin-top:18px;
+    }
+
+    .metric{
+      padding:20px 22px;
+      border-top:1px solid var(--gold);
+      background:rgba(255,255,255,.04);
+    }
+
+    .metric b{
+      display:block;
+      font:600 34px/1 var(--serif);
+    }
+
+    .metric span{
+      display:block;
+      margin-top:6px;
+      color:rgba(255,255,255,.52);
+      font-size:8px;
+      font-weight:900;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+    }
+
+    .pricing{
+      background:var(--soft);
+    }
+
+    .price-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:16px;
+    }
+
+    .price-card{
+      padding:34px 36px;
+      background:#fffdf8;
+      border:1px solid var(--line);
+    }
+
+    .price-card h3{
+      margin:0 0 6px;
+      font:600 30px var(--serif);
+      color:var(--brand);
+    }
+
+    .price-label{
+      color:var(--muted);
+      font-size:9px;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    .price-main{
+      margin-top:23px;
+      padding:22px 0;
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+
+    .price-main small{
+      display:block;
+      color:var(--gold-dark);
+      font-size:8px;
+      font-weight:900;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+    }
+
+    .price-main strong{
+      display:block;
+      margin-top:6px;
+      font:600 clamp(32px,4vw,48px)/1 var(--serif);
+      color:var(--brand);
+    }
+
+    .sample{
+      margin:15px 0 0;
+      color:var(--muted);
+      font-size:11px;
+    }
+
+    .quartiles{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:8px;
+      margin-top:17px;
+    }
+
+    .quartile{
+      padding:16px 14px;
+      border:1px solid var(--line);
+      background:#fff;
+    }
+
+    .quartile span{
+      display:block;
+      color:var(--muted);
+      font-size:8px;
+      font-weight:900;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+
+    .quartile b{
+      display:block;
+      margin-top:5px;
+      font-size:12px;
+    }
+
+    .rent-note{
+      margin-top:22px;
+      padding:19px 20px;
+      background:var(--paper);
+      border-left:2px solid var(--gold);
+      color:var(--muted);
+      font-size:11px;
+      line-height:1.7;
+    }
+
+    .footer{
+      padding:36px 0;
+      background:var(--brand);
+      color:#fff;
+      border-top:1px solid rgba(201,169,110,.28);
+    }
+
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:30px;
+    }
+
+    .footer p{
+      margin:0;
+      color:rgba(255,255,255,.52);
+      font-size:10px;
+    }
+
+    @media(max-width:1180px){
+      .ref-header-inner,
+      .condo-hero-content{
+        width:min(calc(100% - 48px),1000px);
+      }
+
+      .ref-nav{gap:22px}
+      .condo-hero-copy{width:min(620px,60vw)}
+      .section-head{grid-template-columns:1fr;gap:20px}
+      .section-head p{max-width:760px}
+      .benefit-grid{grid-template-columns:repeat(2,1fr)}
+      .benefit:nth-child(2){border-right:0}
+      .benefit:nth-child(-n+2){border-bottom:1px solid var(--line)}
+      .feature-columns{grid-template-columns:repeat(2,1fr)}
+      .feature-column:nth-child(2){border-right:0}
+      .feature-column:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.10)}
+    }
+
+    @media(max-width:860px){
+      .ref-header{position:absolute}
+
+      .ref-header-inner{
+        width:calc(100% - 32px);
+        min-height:74px;
+      }
+
+      .ref-brand-copy{font-size:12px}
+
+      .ref-brand-monogram{
+        width:36px;
+        height:36px;
+        flex-basis:36px;
+        font-size:27px;
+      }
+
+      .ref-menu-btn{
+        display:grid;
+        place-items:center;
+        z-index:2;
+      }
+
+      .ref-nav{
+        position:fixed;
+        inset:0;
+        z-index:1;
+        padding:105px 28px 36px;
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+        justify-content:flex-start;
+        gap:0;
+        background:rgba(10,10,9,.98);
+        transform:translateX(100%);
+        transition:transform .28s ease;
+      }
+
+      .ref-menu-open .ref-nav{transform:none}
+
+      .ref-nav a,
+      .ref-nav-cta{
+        min-height:58px !important;
+        padding:0 !important;
+        border-bottom:1px solid rgba(255,255,255,.1);
+      }
+
+      .ref-nav-cta{
+        margin-top:16px;
+        padding:0 16px !important;
+        justify-content:center;
+        border:1px solid rgba(201,169,110,.72);
+      }
+
+      .container{width:calc(100% - 32px)}
+
+      .condo-hero{
+        min-height:820px;
+        height:auto;
+      }
+
+      .condo-hero-content{
+        width:calc(100% - 32px);
+        min-height:820px;
+        padding:116px 0 195px;
+        align-items:flex-start;
+      }
+
+      .condo-hero-copy{
+        width:100%;
+      }
+
+      .condo-hero h1{
+        font-size:60px;
+      }
+
+      .condo-hero-shade{
+        background:
+          linear-gradient(180deg, rgba(1,20,52,.96) 0%, rgba(1,20,52,.84) 55%, rgba(1,20,52,.32) 100%);
+      }
+
+      .hero-specs{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .hero-spec:nth-child(2){border-right:0}
+      .hero-spec:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.14)}
+
+      .hero-seal{
+        right:18px;
+        bottom:62px;
+        width:126px;
+        height:126px;
+      }
+
+      .hero-index{
+        left:18px;
+        right:164px;
+        bottom:27px;
+        display:grid;
+        gap:4px;
+      }
+
+      .benefit-grid{grid-template-columns:1fr}
+      .benefit{border-right:0;border-bottom:1px solid var(--line)}
+      .benefit:last-child{border-bottom:0}
+
+      .owner-banner{grid-template-columns:1fr}
+
+      .feature-columns{grid-template-columns:1fr}
+      .feature-column{border-right:0;border-bottom:1px solid rgba(255,255,255,.10)}
+      .feature-column:last-child{border-bottom:0}
+
+      .property-metrics{grid-template-columns:repeat(2,1fr)}
+      .price-grid{grid-template-columns:1fr}
+      .footer-inner{align-items:flex-start;flex-direction:column}
+    }
+
+    @media(max-width:480px){
+      .condo-hero h1{font-size:52px}
+      .hero-actions{display:grid;grid-template-columns:1fr}
+      .hero-actions .btn{width:100%}
+      .quartiles{grid-template-columns:1fr}
+      .section{padding:72px 0}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="ref-header">
+    <div class="ref-header-inner">
+      <a class="ref-brand" href="index.html" aria-label="Princípio Construtora">
+        <span class="ref-brand-monogram" aria-hidden="true"><span>P</span></span>
+        <span class="ref-brand-copy">PRINCÍPIO<small>CONSTRUTORA</small></span>
+      </a>
+
+      <button class="ref-menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+      <nav class="ref-nav" aria-label="Navegação principal">
+        <a href="casas.html">Casas</a>
+        <a href="#produto">Condomínio</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="processo.html">Como construímos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="caderno.html">Caderno</a>
+        <a class="ref-nav-cta" href="index.html#contato">Iniciar um projeto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="condo-hero" id="produto">
+      <div class="condo-hero-media">
+        <img src="assets/images/condominio-jose-pedro-hero-hd.jpg"
+          alt="Fachada do Condomínio José Pedro Moreira">
+        <div class="condo-hero-shade" aria-hidden="true"></div>
+      </div>
+
+      <div class="condo-hero-content">
+        <div class="condo-hero-copy">
+          <div class="condo-kicker">Produto · Condomínio residencial</div>
+          <h1>José Pedro<br>Moreira</h1>
+          <p class="condo-lead">Casas modernas e funcionais em um condomínio onde praticidade, segurança e lazer se
+            encontram para transformar a rotina em uma experiência mais simples e completa.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#diferenciais">Ver diferenciais</a>
+            <a class="btn btn-ghost" href="#proprietario">Sou proprietário</a>
+          </div>
+
+          <div class="hero-specs" aria-label="Características do condomínio">
+            <div class="hero-spec"><strong>2 até 2</strong><span>quartos</span></div>
+            <div class="hero-spec"><strong>1 até 1</strong><span>banheiros</span></div>
+            <div class="hero-spec"><strong>0 até 2</strong><span>vagas</span></div>
+            <div class="hero-spec"><strong>0 até 0</strong><span>suíte</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-seal" aria-label="Selo Condomínio José Pedro Moreira">
+        <img src="assets/images/condominio-jose-pedro-selo.jpg" alt="Logo do Condomínio José Pedro Moreira">
+      </div>
+
+      <div class="hero-index">
+        <span>Condomínio José Pedro Moreira</span>
+        <span>Garagem · salão de festas · beach tennis</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <div class="section-eyebrow">01 · Sobre o condomínio</div>
+            <h2>Praticidade, segurança e qualidade de vida.</h2>
+          </div>
+          <p>Garagem com praticidade e segurança. Área de lazer com salão de festas e quadra de beach tennis para
+            momentos de diversão e convívio.</p>
+        </header>
+
+        <div class="benefit-grid">
+          <article class="benefit">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 39 10v12c0 10-6 17-15 22C15 39 9 32 9 22V10Z"/><path d="m17 24 5 5 10-11"/></svg>
+            </div>
+            <h3>Segurança</h3>
+            <p>Recursos de controle, acesso e proteção para apoiar uma rotina mais tranquila.</p>
+          </article>
+
+          <article class="benefit">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="20" cy="20" r="10"/><path d="M27 27 41 41M15 15l10 10M9 39l14-14"/></svg>
+            </div>
+            <h3>Lazer completo</h3>
+            <p>Salão de festas e quadra de beach tennis para diversão, esporte e convivência.</p>
+          </article>
+
+          <article class="benefit">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 24 24 8l18 16v17H6Z"/><path d="M15 41V25h18v16M18 31h12"/></svg>
+            </div>
+            <h3>Garagem</h3>
+            <p>Vagas privativas com praticidade para o uso diário das unidades.</p>
+          </article>
+
+          <article class="benefit">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 42V20M24 26c-8 0-14-6-14-14 8 0 14 6 14 14ZM24 32c8 0 14-6 14-14-8 0-14 6-14 14Z"/></svg>
+            </div>
+            <h3>Infraestrutura</h3>
+            <p>Recursos modernos que valorizam o condomínio e tornam a rotina mais funcional.</p>
+          </article>
+        </div>
+
+        <div class="owner-banner" id="proprietario">
+          <div>
+            <strong>É proprietário de uma unidade?</strong>
+            <p>Anuncie o seu imóvel com a gente.</p>
+          </div>
+          <a class="btn btn-gold"
+            href="https://wa.me/5514998770201?text=Ol%C3%A1%2C%20sou%20propriet%C3%A1rio%20de%20uma%20unidade%20no%20Condom%C3%ADnio%20Jos%C3%A9%20Pedro%20Moreira%20e%20quero%20anunciar."
+            target="_blank" rel="noopener">Quero anunciar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features" id="diferenciais">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <div class="section-eyebrow">02 · Diferenciais do condomínio</div>
+            <h2>Estrutura organizada por função.</h2>
+          </div>
+          <p>Os itens foram agrupados para deixar a leitura mais limpa e mais próxima do padrão editorial do site.</p>
+        </header>
+
+        <div class="feature-columns">
+          <article class="feature-column">
+            <h3>Segurança & acesso</h3>
+            <ul class="feature-list">
+              <li>Alarme</li>
+              <li>Cerca elétrica</li>
+              <li>Circuito TV</li>
+              <li>Interfone</li>
+              <li>Portão eletrônico</li>
+              <li>Portaria 24horas</li>
+              <li>Segurança 24horas</li>
+            </ul>
+          </article>
+
+          <article class="feature-column">
+            <h3>Infraestrutura</h3>
+            <ul class="feature-list">
+              <li>Água individual</li>
+              <li>Aquecedor elétrico</li>
+              <li>Aquecedor gás</li>
+              <li>Aquecedor solar</li>
+              <li>Box despejo</li>
+              <li>Gás canalizado</li>
+            </ul>
+          </article>
+
+          <article class="feature-column">
+            <h3>Convivência</h3>
+            <ul class="feature-list">
+              <li>Jardim</li>
+              <li>Lavanderia</li>
+              <li>Gramado</li>
+              <li>Academia</li>
+              <li>Churrasqueira</li>
+              <li>Home cinema</li>
+            </ul>
+          </article>
+
+          <article class="feature-column">
+            <h3>Lazer</h3>
+            <ul class="feature-list">
+              <li>Piscina</li>
+              <li>Playground</li>
+              <li>Quadra esportiva</li>
+              <li>Quadra tênis</li>
+              <li>Quadra squash</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="property-metrics">
+          <div class="metric"><b>0</b><span>Vagas visitantes</span></div>
+          <div class="metric"><b>0</b><span>Elevadores</span></div>
+          <div class="metric"><b>0</b><span>Torres</span></div>
+          <div class="metric"><b>0</b><span>Andares</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="precos">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <div class="section-eyebrow">03 · Preço médio dos imóveis</div>
+            <h2>Referências da amostra anunciada.</h2>
+          </div>
+          <p>Os valores abaixo reproduzem os dados fornecidos para o condomínio, sem completar informações que não
+            estavam disponíveis.</p>
+        </header>
+
+        <div class="price-grid">
+          <article class="price-card">
+            <div class="price-label">Mediana do preço de apartamentos anunciados para venda</div>
+            <h3>Venda</h3>
+            <div class="price-main">
+              <small>Valor</small>
+              <strong>R$ 245.000,00</strong>
+            </div>
+            <p class="sample">Faixa: R$ 245.000,00 até R$ 245.000,00 · Quantidade amostra = 1.</p>
+
+            <div class="quartiles">
+              <div class="quartile"><span>1º Quartil</span><b>R$ 245.000,00</b></div>
+              <div class="quartile"><span>Mediana</span><b>R$ 245.000,00</b></div>
+              <div class="quartile"><span>3º Quartil</span><b>R$ 245.000,00</b></div>
+            </div>
+          </article>
+
+          <article class="price-card">
+            <div class="price-label">Mediana do preço de imóveis anunciados para aluguel</div>
+            <h3>Aluguel</h3>
+            <div class="price-main">
+              <small>Quantidade da amostra</small>
+              <strong>1 imóvel</strong>
+            </div>
+            <div class="rent-note">O material informado traz a quantidade da amostra para aluguel, mas não apresenta o
+              valor correspondente da mediana.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="ref-brand" href="index.html">
+        <span class="ref-brand-monogram" aria-hidden="true"><span>P</span></span>
+        <span class="ref-brand-copy">PRINCÍPIO<small>CONSTRUTORA</small></span>
+      </a>
+      <p>Condomínio José Pedro Moreira · Produto residencial</p>
+      <a class="btn btn-gold" href="index.html">Voltar ao site</a>
+    </div>
+  </footer>
+
+  <script>
+    const refMenuBtn = document.querySelector('.ref-menu-btn');
+    refMenuBtn?.addEventListener('click', () => {
+      const open = document.body.classList.toggle('ref-menu-open');
+      refMenuBtn.setAttribute('aria-expanded', String(open));
+      refMenuBtn.textContent = open ? '×' : '☰';
+    });
+
+    document.querySelectorAll('.ref-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.body.classList.remove('ref-menu-open');
+        if (refMenuBtn) {
+          refMenuBtn.setAttribute('aria-expanded', 'false');
+          refMenuBtn.textContent = '☰';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
