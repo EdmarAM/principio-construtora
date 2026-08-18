@@ -2420,6 +2420,210 @@
     }
 
 
+    /* =========================================================
+       FOOTER — mesma linguagem visual da navegação principal
+       ========================================================= */
+    .footer {
+      background: #080908;
+      color: #fff;
+      padding: 0;
+      border-top: 1px solid rgba(201, 169, 110, .72);
+      font-family: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .footer-grid {
+      padding: 58px 0 50px;
+      gap: 0;
+    }
+
+    .footer-card {
+      min-height: 310px;
+      padding: 10px 38px;
+      background: transparent;
+      color: #fff;
+      border-right: 1px solid rgba(201, 169, 110, .18);
+    }
+
+    .footer-card:first-child {
+      padding-left: 0;
+    }
+
+    .footer-card:last-child {
+      padding-right: 0;
+      border-right: 0;
+    }
+
+    .footer-brand {
+      margin-bottom: 28px;
+    }
+
+    .footer .ref-brand-monogram > span {
+      background: #080908;
+    }
+
+    .footer-card h3 {
+      margin: 2px 0 26px;
+      font-family: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 11px;
+      line-height: 1;
+      font-weight: 600;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: #d9b96f;
+    }
+
+    .footer-about p {
+      max-width: 390px;
+      margin: 0 0 25px;
+      font-size: 12px;
+      line-height: 1.7;
+      font-weight: 400;
+      color: rgba(255, 255, 255, .62);
+    }
+
+    .contact-list {
+      gap: 12px;
+      font-size: 11px;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, .78);
+    }
+
+    .contact-list b {
+      color: #c9a96e;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: .12em;
+    }
+
+    .footer-form {
+      gap: 11px;
+    }
+
+    .footer-form input,
+    .footer-form textarea {
+      border: 1px solid rgba(255, 255, 255, .16);
+      background: rgba(255, 255, 255, .035);
+      color: #fff;
+      padding: 13px 14px;
+      font-size: 12px;
+      transition: border-color .2s ease, background .2s ease;
+    }
+
+    .footer-form input::placeholder,
+    .footer-form textarea::placeholder {
+      color: rgba(255, 255, 255, .42);
+    }
+
+    .footer-form input:focus,
+    .footer-form textarea:focus {
+      border-color: rgba(201, 169, 110, .72);
+      background: rgba(255, 255, 255, .055);
+    }
+
+    .footer-form button {
+      min-height: 44px;
+      border: 1px solid rgba(201, 169, 110, .72);
+      background: transparent;
+      color: #d9b96f;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .1em;
+      transition: color .2s ease, border-color .2s ease, background .2s ease;
+    }
+
+    .footer-form button:hover {
+      background: #c9a96e;
+      border-color: #c9a96e;
+      color: #171717;
+    }
+
+    .footer-links {
+      gap: 0;
+    }
+
+    .footer-links a {
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 500;
+      letter-spacing: 0;
+      text-transform: none;
+      color: rgba(255, 255, 255, .84);
+      transition: color .2s ease, padding-left .2s ease;
+    }
+
+    .footer-links a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 0;
+      height: 1px;
+      background: #c9a96e;
+      transition: width .22s ease;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+      padding-left: 6px;
+    }
+
+    .footer-links a:hover::before {
+      width: 100%;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(201, 169, 110, .18);
+      background: #080908;
+      padding: 18px 20px 20px;
+      font-family: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .42);
+    }
+
+    @media (max-width: 1100px) {
+      .footer-card:last-child {
+        border-right: 0;
+        border-top: 1px solid rgba(201, 169, 110, .18);
+        padding: 34px 0 0;
+        margin-top: 34px;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .footer-grid {
+        padding: 44px 0 38px;
+      }
+
+      .footer-card,
+      .footer-card:first-child,
+      .footer-card:last-child {
+        min-height: auto;
+        padding: 30px 0;
+        margin: 0;
+        border-right: 0;
+        border-top: 1px solid rgba(201, 169, 110, .18);
+      }
+
+      .footer-card:first-child {
+        padding-top: 0;
+        border-top: 0;
+      }
+
+      .footer-card:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+
 
 
 
@@ -2759,10 +2963,9 @@
   <footer class="footer">
     <div class="container footer-grid">
       <section class="footer-card footer-about">
-        <a class="brand" href="index.html" aria-label="Princípio Construtora">
-          <img class="brand-logo"
-            src="data:image/png;base64,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"
-            alt="Princípio Construtora">
+        <a class="ref-brand footer-brand" href="index.html" aria-label="Princípio Construtora">
+          <span class="ref-brand-monogram" aria-hidden="true"><span>P</span></span>
+          <span class="ref-brand-copy">PRINCÍPIO<small>CONSTRUTORA</small></span>
         </a>
         <p>Arquitetura residencial e construção com atenção à rotina, à materialidade e aos detalhes que unem projeto e
           execução.</p>
